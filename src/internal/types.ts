@@ -42,7 +42,7 @@ interface NetInfoConnectedState<
 
 interface NetInfoDisconnectedState<T extends NetInfoStateType> {
   type: T;
-  isConnected: false;
+  isConnected: boolean;
   isInternetReachable: false;
   details: null;
 }
